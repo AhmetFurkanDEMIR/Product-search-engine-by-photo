@@ -16,8 +16,8 @@
 
 **Project stages**
 
-* [[x] 1. week : Database design](/db/)
-* [[ ] 2. week : Data collection (Trendyol, Hepsiburada, n11 and Boyner)](/)
+[[x] 1. week : Database design](/db/)
+[[ ] 2. week : Data collection (Trendyol, Hepsiburada, n11 and Boyner)](/)
 
 
 **Contributors**
