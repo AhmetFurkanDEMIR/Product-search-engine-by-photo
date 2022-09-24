@@ -1,0 +1,1 @@
+sudo ssh -i ssh-key-2022-09-20.key ubuntu@141.147.10.228
