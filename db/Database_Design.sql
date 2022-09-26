@@ -25,7 +25,20 @@ CREATE TABLE public.tbl_product (
 	pr_url varchar(200) NULL,
 	pr_category int4 NULL,
 	pr_store int4 NULL,
+	pr_price float NULL,
 	CONSTRAINT tbl_product_pkey PRIMARY KEY (pr_id)
+);
+
+-- public.tbl_store definition
+
+-- Drop table
+
+-- DROP TABLE public.tbl_store;
+
+CREATE TABLE public.tbl_store (
+	store_id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	store_name varchar(30) NULL,
+	CONSTRAINT tbl_store_pkey PRIMARY KEY (store_id)
 );
 
 
@@ -53,17 +66,4 @@ CREATE TABLE public.tbl_product_images (
 -- public.tbl_product_images foreign keys
 
 ALTER TABLE public.tbl_product_images ADD CONSTRAINT fk_imgs FOREIGN KEY (pr_id) REFERENCES public.tbl_product(pr_id);
-
-
--- public.tbl_store definition
-
--- Drop table
-
--- DROP TABLE public.tbl_store;
-
-CREATE TABLE public.tbl_store (
-	store_id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
-	store_name varchar(30) NULL,
-	CONSTRAINT tbl_store_pkey PRIMARY KEY (store_id)
-);
 
