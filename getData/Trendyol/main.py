@@ -25,8 +25,17 @@ def productThread(productLink):
     productName = productName.find('span')
     productName = brand + productName.text
 
+    images = soup.find("div", { "class" : "styles-module_slider__o0fqa" })
 
-    print(productName)
+    images = images.find_all("img")
+
+    imagesLink = []
+
+    for i in images:
+
+        imagesLink.append(i["src"].replace("mnresize/128/192/",""))
+
+    print(imagesLink)
     
 
 def pageProcess(soup):
