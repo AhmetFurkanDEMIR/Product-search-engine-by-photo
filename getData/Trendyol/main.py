@@ -35,7 +35,10 @@ def productThread(productLink):
 
         imagesLink.append(i["src"].replace("mnresize/128/192/",""))
 
-    print(imagesLink)
+    category = productName.split(" ")
+    category = category[len(category)-2]
+
+    print(productName)
     
 
 def pageProcess(soup):
