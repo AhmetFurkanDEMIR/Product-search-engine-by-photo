@@ -49,3 +49,8 @@ CREATE TABLE public.tbl_product_images (
 
 ALTER TABLE public.tbl_product_images ADD CONSTRAINT fk_imgs FOREIGN KEY (pr_id) REFERENCES public.tbl_product(pr_id);
 
+insert into public.tbl_store(store_name) values('Trendyol');
+insert into public.tbl_store(store_name) values('Hepsiburada');
+insert into public.tbl_store(store_name) values('n11');
+insert into public.tbl_store(store_name) values('Boyner');
+
