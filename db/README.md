@@ -6,7 +6,7 @@
 
 **Relational table design**
 
-![SQL_Schema](https://user-images.githubusercontent.com/54184905/192263597-e5347a14-4228-4ec0-9b03-d365b52d752c.png)
+![Screenshot_2022-09-29_10-40-31](https://user-images.githubusercontent.com/54184905/192972797-f071308f-7fdc-466f-95d2-1d116368f6e2.png)
 
 
 **SQL codes of tables**

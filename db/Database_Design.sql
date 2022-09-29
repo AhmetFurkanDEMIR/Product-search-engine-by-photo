@@ -1,18 +1,3 @@
--- Design codes of tables (Ahmet Furkan Demir)
-
--- public.tbl_category definition
-
--- Drop table
-
--- DROP TABLE public.tbl_category;
-
-CREATE TABLE public.tbl_category (
-	cat_id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
-	cat_name varchar(30) NULL,
-	CONSTRAINT tbl_category_pkey PRIMARY KEY (cat_id)
-);
-
-
 -- public.tbl_product definition
 
 -- Drop table
@@ -23,7 +8,6 @@ CREATE TABLE public.tbl_product (
 	pr_id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
 	pr_name varchar(150) NULL,
 	pr_url varchar(200) NULL,
-	pr_category int4 NULL,
 	pr_store int4 NULL,
 	pr_price float NULL,
 	CONSTRAINT tbl_product_pkey PRIMARY KEY (pr_id)
@@ -44,9 +28,7 @@ CREATE TABLE public.tbl_store (
 
 -- public.tbl_product foreign keys
 
-ALTER TABLE public.tbl_product ADD CONSTRAINT fk_category FOREIGN KEY (pr_category) REFERENCES public.tbl_category(cat_id);
 ALTER TABLE public.tbl_product ADD CONSTRAINT fk_store FOREIGN KEY (pr_store) REFERENCES public.tbl_store(store_id);
-
 
 -- public.tbl_product_images definition
 
