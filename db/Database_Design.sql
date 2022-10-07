@@ -4,12 +4,16 @@
 
 -- DROP TABLE public.tbl_product;
 
+DROP TABLE public.tbl_product_images;
+DROP TABLE public.tbl_product;
+DROP TABLE public.tbl_store;
+
 CREATE TABLE public.tbl_product (
 	pr_id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
 	pr_name varchar(150) NULL,
 	pr_url varchar(200) NULL,
 	pr_store int4 NULL,
-	pr_price float NULL,
+	pr_price varchar(200) NULL,
 	CONSTRAINT tbl_product_pkey PRIMARY KEY (pr_id)
 );
 
@@ -39,8 +43,7 @@ ALTER TABLE public.tbl_product ADD CONSTRAINT fk_store FOREIGN KEY (pr_store) RE
 CREATE TABLE public.tbl_product_images (
 	img_id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
 	pr_id int4 NULL,
-	img_url varchar(150) NULL,
-	img_path varchar(150) NULL,
+	img_url varchar(150) null,
 	CONSTRAINT tbl_product_images_pkey PRIMARY KEY (img_id)
 );
 
@@ -51,6 +54,6 @@ ALTER TABLE public.tbl_product_images ADD CONSTRAINT fk_imgs FOREIGN KEY (pr_id)
 
 insert into public.tbl_store(store_name) values('Trendyol');
 insert into public.tbl_store(store_name) values('Hepsiburada');
-insert into public.tbl_store(store_name) values('n11');
-insert into public.tbl_store(store_name) values('Boyner');
 
+
+select * from tbl_store
