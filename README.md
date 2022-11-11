@@ -18,7 +18,8 @@
 
 * [x] [1. week : Database design](/db/)
 * [x] [2. and 3. week : Data collection (Trendyol and Hepsiburada)](/getData/)
-
+* [x] [5, 6 and 7. week: Creation of Artificial Intelligence model](/modelAI/)
+* [x] [8. week: Simple interface with Python-Flask](/flask-web/)
 
 **Contributors**
 
