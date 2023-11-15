@@ -28,6 +28,18 @@
 * [x] [5, 6 and 7. week: Creation of Artificial Intelligence model](/modelAI/)
 * [x] [8. week: Simple interface with Python-Flask](/flask-web/)
 
+
+**Main project, improved version**
+
+A more developed version of this project, with better architecture and a finished version, is below.
+
+* [HepsiTrendTech ](https://github.com/AhmetFurkanDEMIR/HepsiTrendTech)
+
+* [HepsiTrendTech-APIs](https://github.com/AhmetFurkanDEMIR/HepsiTrendTech-APIs)
+
+* [HepsiTrendTech-Flutter](https://github.com/AhmetFurkanDEMIR/HepsiTrendTech-Flutter)
+
+
 **Contributors**
 
 * [Ahmet Furkan Demir](https://www.ahmetfurkandemir.com/)
